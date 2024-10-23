@@ -1,0 +1,5 @@
+discord.py
+yt-dlp
+PyNaCl
+libnacl
+libff
