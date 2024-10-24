@@ -21,6 +21,15 @@ Features
 - **Discord Application ID** (Use created bot at  [Discord Developer Portal](https://discord.com/developers/applications)).
 - **Discord Channel name** (The name of the your Discord Channel where the interactions with the bot happens)
 
+## Getting the Docker Image
+
+You can either build the Docker image yourself or pull the pre-built image from Docker Hub. To pull the image, run the following command:
+
+```bash
+docker pull hasuuka/beatsync
+```
+
+This command will download the latest version of Beatsync for Discord image. You can
 ## Building the Docker Image
 
 1. Clone the repository:
@@ -37,14 +46,42 @@ Features
     ```
 
 ## Running the Bot
+## Using Docker Run
 
-To run the bot, you'll need to create a `.env` file with the following keys:
+To run the bot using the docker run command, you'll need to create a `.env`file with the following keys:
 
 ```plaintext
 TOKEN=Your_Discord_Bot_Token
 APP=Your_Discord_Application_ID
 CHANNEL=Default_Text_Channel_ID
 ```
+
+Once your .env file is set up, run the container with:
+
+````bash
+
+docker run -d --name beatsync --env-file .env hasuuka/beatsync
+````
+## Using Docker Compose
+
+If you prefer using Docker Compose for easier management, you can create a docker-compose.yml file in your project directory. Here’s an example configuration:
+
+```yaml
+services:
+  beatsync:
+    image: hasuuka/beatsync
+    container_name: beatsync
+    env_file:
+      - .env
+    restart: unless-stopped
+```
+To start the bot using Docker Compose, run:
+
+```bash
+docker-compose up -d
+```
+This command will start Containeer in detached mode.
+
 ## Usage
 Commands
 
