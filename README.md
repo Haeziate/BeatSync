@@ -131,7 +131,7 @@ Commands
 The bot uses both console and file-based logging (bot.log). Logs provide detailed information about events like voice channel updates, song playback, and errors.
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GNU General Public License v3.0.
 
 Contributions are welcome! If you encounter any bugs or want to suggest new features, feel free to open an issue or create a pull request. Enjoy your music! 🎶
 
