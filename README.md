@@ -2,7 +2,7 @@
 ## Overview
 
 Welcome to BeatSync for Discord! This is a powerful and customizable music bot designed to provide your Discord server with high-quality audio streaming from YouTube. The bot includes a variety of music-related commands, a fun "Guess the Song" game, and volume controls to keep your listening experience smooth and enjoyable.
-Features
+## Features
 
     🎵 Play music from YouTube (supports both single songs and playlists).
     🎧 Join and leave voice channels automatically.
